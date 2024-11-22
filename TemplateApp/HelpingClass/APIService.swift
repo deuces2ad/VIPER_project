@@ -1,9 +1,5 @@
 import Foundation
 
-struct DummyParameters: Encodable {
-    // No properties, or empty struct
-}
-
 protocol APIServiceProtocol {
   func sendRequest<T: Decodable, U: Encodable>(
       endpoint: String,
